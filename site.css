@@ -7,6 +7,13 @@ body{
 
  
 }
+
+.btn-primary{
+
+  background-color: white !important;
+  font-size: 1.6rem !important;
+  font-weight: 500 !important;
+}
 .bg-t-1{
   background-color: rgba(0,0,0,0.6);
 }
@@ -79,6 +86,17 @@ body{
   background-size: cover;
   
 } 
+
+.cover-new-car{
+
+  background-image: url("Assets/Images/Car/Thumbnails/Nissan/NissanGTR50thAnniversary/2020-Nissan-GT-R-50th-Anniversary_display2.jpg");
+  height: 100vh;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+} 
 .cover{
   background-size: cover;
   background-repeat: no-repeat;
@@ -94,6 +112,18 @@ body{
 }
 .h-80{
   height: 80vh;
+}
+
+.h-90{
+  height: 90vh;
+}
+
+.l-h{
+  line-height: 0px;
+}
+
+.h-100{
+  height: 100vh;
 }
 .cover-2{
   background-image: url("Assets/Images/Background/AcuraNSXType2022-03_2.jpg");
@@ -160,15 +190,15 @@ body{
 }
 
 
-.carouselForCard .carousel-control-next,
+/* .carouselForCard .carousel-control-next,
 #oneImageSlider .carousel-control-next{
- right: 3% !important;
+ right: 1% !important;
 }
 
 .carouselForCard .carousel-control-prev,
 #oneImageSlider .carousel-control-prev{
-  left: 3% !important;
-}
+  left: 1% !important;
+} */
 .carouselForCard .carousel-indicators  button {
   margin-top: 3rem;
   height:15px !important;
@@ -226,20 +256,9 @@ body{
 }
 .one-image-slider img{
   margin-top: 0.5rem;
-  height: 70vh;
-}
-@media screen and (max-width: 1080px) {
-  .one-image-slider img {
-    height: 32vh;;
-  }
+  height: 75vh;
 }
 
-
-@media screen and (max-width: 414px) {
-  .one-image-slider img {
-    height: 75vh;
-  }
-}
 .one-image-slider .carousel-control-next-icon,.one-image-slider .carousel-control-prev-icon {
 
   width: 10rem !important;
@@ -307,6 +326,7 @@ body{
   border-bottom: 5px solid #FC5E00;
   display: inline-block;
   width:100%;
+ 
   
 }
 .border-gray {
@@ -382,7 +402,8 @@ select{
   outline: none !important;
   padding: 0.2rem;
   width: 100%;
-  margin: 0 2rem;
+  /* margin: 0 2rem; */
+  text-align: center;
 
 }
 
@@ -535,7 +556,7 @@ img[src*="Assets/Images/Car/Thumbnails"] { */
   text-overflow: clip;
 }
 .border-raduis-1x{
-  border-radius: 0.2rem;
+  border-radius: 0.5rem;
 }
 
 .border-top-color-2{
@@ -632,6 +653,15 @@ img[src*="Assets/Images/Car/Thumbnails"] { */
   background: #04AA6D;
 } */
 
+
+.overflow-hidden-after-two{
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+   overflow: hidden;
+   text-overflow: ellipsis;
+
+}
 .contact-cover-shadow{
   background-color:rgba(555,555,555,0.3);
   height: 50vh;
@@ -654,7 +684,105 @@ img[src*="Assets/Images/Car/Thumbnails"] { */
   display: none !important;
 }
 
+/* .five-cards{
+
+  width: calc(100% / 5);
+  
+} */
 .five-cards .card{
 
-  border: 3px solid #e9e9e9 !important;
+  border: 3px solid #999999 !important;
+  border-radius: 1rem !important;
+
+}
+
+
+
+
+@media screen and (max-width: 1080px) {
+  .one-image-slider img {
+    height: 27vh;
+  }
+
+
+  .currency {
+    font-size: 1.5rem!important;
+   
+}
+
+
+.heading-3 {
+  font-weight: 800;
+  font-size: 1.2rem;
+}
+
+.ModelDD {
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.mt-1rem {
+   margin-top: -0.6rem; 
+}
+
+.five-cards b {
+  font-size: 11px;
+  font-weight: 900;
+}
+
+.img-fit {
+  padding: 0.8rem;
+}
+
+.bestSellerFeature-1x div{
+  font-size: 0.7rem;
+  text-align: center;
+}
+
+}
+
+
+@media screen and (max-width: 768px) {
+
+  .one-image-slider img {
+    height: 28vh;
+  }
+  .heading-3 {
+    font-size: 0.8rem;
+   }
+
+.fa-icon {
+  font-size: 1rem;
+}
+
+.currency {
+  font-size: 1rem!important;
+}
+
+.cashback {
+  width: 4.8rem;
+  font-size: 0.8rem;
+  border-radius: 0.5rem;
+}
+
+.cashback b {
+  font-size: 1rem;
+  display: inline-block;
+  margin-top: -0.4rem;
+}
+/* 
+.five-cards{
+
+  width: 100%;
+  
+} */
+
+}
+
+
+
+@media screen and (max-width: 414px) {
+  .one-image-slider img {
+    height: 75vh;
+  }
 }
